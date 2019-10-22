@@ -28,7 +28,7 @@ public class Save {
             String[] splitList = currentTaskString.split(",");
             String type = splitList[0];
             String name = splitList[1];
-            String birthYear = splitList[2].trim();
+            String birthYear = splitList[2];
             try {
                 int birth = Integer.parseInt(birthYear);
                 Animal animal = createAnimal(type, name, birth);
